@@ -1,6 +1,6 @@
 package com.gamblerhud;
 
-import net.minecraft.client.InputConstants;
+import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.Screen;
