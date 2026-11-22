@@ -3,7 +3,7 @@ package com.gamblerhud;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.FontDescription;
+import net.minecraft.network.chat.FontDescription;
 import net.minecraft.resources.Identifier;
 
 import java.util.List;
