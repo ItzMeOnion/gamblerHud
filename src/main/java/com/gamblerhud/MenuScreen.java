@@ -1,6 +1,5 @@
 package com.gamblerhud;
 
-import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.Screen;
@@ -65,7 +64,8 @@ public class MenuScreen extends Screen {
     }
 
     private static String keyName() {
-        return InputConstants.getKey(Config.get().keyCode).getDisplayName().getString();
+        String name = GLFW.glfwGetKeyName(Config.get().keyCode, 0);
+        return name != null ? name.toUpperCase() : "Key " + Config.get().keyCode;
     }
 
     private static void toggleAll() {
