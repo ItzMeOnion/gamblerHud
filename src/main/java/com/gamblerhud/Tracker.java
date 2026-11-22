@@ -119,6 +119,10 @@ public final class Tracker {
         return t;
     }
 
+    public static long allNet() {
+        return allIn() - allOut();
+    }
+
     public static long inOf(boolean all) {
         return all ? allIn() : store.current.inCents;
     }
