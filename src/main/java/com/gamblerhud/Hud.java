@@ -3,6 +3,7 @@ package com.gamblerhud;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.FontDescription;
 import net.minecraft.resources.Identifier;
 
 import java.util.List;
@@ -63,7 +64,7 @@ public final class Hud {
 
     private static Component styled(String s, Panel p) {
         Identifier id = fontId(p.font);
-        return Component.literal(s).withStyle(st -> st.withFont(id));
+        return Component.literal(s).withStyle(st -> st.withFont(new FontDescription.Resource(id)));
     }
 
     /** Draws text at screen x,y, scaled, using the panel's font and shadow setting. */
