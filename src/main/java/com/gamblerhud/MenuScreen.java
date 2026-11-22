@@ -106,7 +106,7 @@ public class MenuScreen extends Screen {
     }
 
     @Override
-    protected void renderBackground(GuiGraphics g, int mx, int my, float partialTick) {
+    public void renderBackground(GuiGraphics g, int mx, int my, float partialTick) {
         g.fill(0, 0, width, height, 0x88000000);
         Draw.rect(g, px, py, PW, PH, Config.get().menuBg);
         Draw.outline(g, px, py, PW, PH, 0xFF2A3038);
