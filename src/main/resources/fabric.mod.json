@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "gamblerhud",
+  "version": "${version}",
+  "name": "GamblerHud",
+  "description": "Customisable HUD with profit tracking, graphs, auctions and sessions.",
+  "authors": ["Onxon"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.gamblerhud.GamblerHudMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
